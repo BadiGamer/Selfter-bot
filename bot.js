@@ -79,7 +79,7 @@ client.on('message', message => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=474733285440749570&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=567516424159887383&permissions=8&scope=bot')
   .setDescription(`**
   New Server Add SLFSTR Bot ✅
 اسم السيرفر: ${guild.name}
@@ -135,7 +135,7 @@ client.channels.get("477397641689300992").sendEmbed(embed)
             message.channel.send(`تم أنشاء التذكره , #${c.name}.`);
             const embed = new Discord.RichEmbed()
                 .setColor(0xCF40FA)
-                .addField(` ${message.author.username}!`, ` *** شكرًا لك على التواصل مع فريق الدعم! سنرد عليك في أقرب وقت ممكن.. *** `)
+                .addField(` ${message.author.username}!`, ` *** هلا نتمنى توضح ليش فتحت التيكت وانتظر الادارة شكرا.. *** `)
                 .setTimestamp();
             c.send({
                 embed: embed
@@ -583,7 +583,7 @@ client.on('message',async message => {
     .addField('» مضى على دخولك الدسكورد', `${created.toFixed(0)} يومّا`,true)
     .addField('» مضى على دخولك السيرفر', `${joined.toFixed(0)} يومّا`,true)
     .addField('» دعوات',inviteCount,true)
-    .setFooter(' SLFSTR BOT © | 2018.');
+    .setFooter(' Badi sys © | 2019.');
 
     message.channel.send(embed);
   });
@@ -596,7 +596,7 @@ client.on('message',async message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/M3vsUp8**")
+  .addField(" ** :gear: Server Support :gear: **" , "  https://discord.gg/M3vsUp8**")
      
      
   message.channel.sendEmbed(embed);
@@ -613,7 +613,7 @@ client.on('message',async message => {
                 if(message.content === prefix + "inv") {
                     let embed = new Discord.RichEmbed ()
                     embed.setTitle("**:arrow_right: Invite Cozmo Bot!**")
-                    .setURL("https://discordapp.com/api/oauth2/authorize?client_id=474733285440749570&permissions=8&scope=bot");
+                    .setURL("https://discordapp.com/api/oauth2/authorize?client_id=567516424159887383&permissions=8&scope=bot");
                    message.channel.sendEmbed(embed);
                   }
 });
@@ -667,7 +667,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#8650a7")
-  .addField("Done" , " تــــم ارســالك في الخــاص")
+  .addField("Done" , " شيك الخاص")
   message.channel.sendEmbed(embed);
     }
 });
