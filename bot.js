@@ -23,12 +23,12 @@ const ytdl = require('ytdl-core');
  const dateFormat = require('dateformat'); 
  const pretty = require('pretty-ms') 
 
-var prefix = "$"
+var prefix = "*"
 
 
       
       const devs = ['527505679171321856','421023400971075585'];
-const adminprefix = "$"
+const adminprefix = "*"
 
 client.on('message', message => {
      if (message.author.bot) return;
