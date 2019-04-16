@@ -1509,7 +1509,25 @@ client.on('message',message =>{
   .setDescription(`${invites.join(`\n`)+'\n\n**By:** '+message.author}`)
   .setThumbnail("https://media.discordapp.net/attachments/477570106755383307/479229377037598720/22713057_151850495552450_709700562_o.jpg?width=201&height=201")
            message.channel.send({ embed: embed });
+client.on('message', message => {
+  if (message.content.startsWith('!فعلني')) {
+     if(!message.channel.guild) return;
+  message.member.addRole(message.guild.roles.find("name", "مفعل"));
+ 
+ }
+ });
 
+client.on('ready', () => {
+console.log("ALPHA CODES - IS START");
+});
+
+
+
+client.on('message', msg => {
+  if (msg.content === '!فعلني') {
+    msg.reply('تم تفعيلك');
+  }
+});
 
   });
    
