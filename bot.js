@@ -148,7 +148,7 @@ client.channels.get("477397641689300992").sendEmbed(embed)
 
         message.channel.send(` ***هل أنت متأكد من إغلآق التذكرة ؟, Type $confirm to close the ticket., لديك 10 ثوآني للتأكيد .***`)
             .then((m) => {
-                message.channel.awaitMessages(response => response.content === '$confirm', {
+                message.channel.awaitMessages(response => response.content === '*confirm', {
                         max: 1,
                         time: 10000,
                         errors: ['time'],
@@ -641,24 +641,24 @@ ${prefix}allbots - رؤية جميع بوتات السيرفر :robot:
 ${prefix}channels - لرؤية رومات السيرفر :urn:
 ${prefix}color - لأختيار لونك في السيرفر :heart:
 ${prefix}invite - معلومات عن الدعوة :soccer:
-$new - لفتح تذكرة
-$close - لاقفال التذكرة
+*new - لفتح تذكرة
+*close - لاقفال التذكرة
          
         Admin's Commands.  
-$ban - أمر الباند :no_entry:
-$kick - أمر الكيك  :outbox_tray:
-$ccolors-   صنع ألوان 
-$bc -   البرودكاست  لكل الأعضاء
-$role - لأعطاء رتبة لـ أحد الأعضاء  
-$rerole - لآزالة الرتبة من أحد الاعضاء 
-$setvoice -   لعمل روم الفويس أونلاين  
-$giveaway - قيف اواي :tada:
-$setvoice - لعمل روم بآالمتصلين بالصوت في السيرفر :telephone_receiver: 
-$setwelcomer - لوضع شات لترحيب
+*ban - أمر الباند :no_entry:
+*kick - أمر الكيك  :outbox_tray:
+*ccolors-   صنع ألوان 
+*bc -   البرودكاست  لكل الأعضاء
+*role - لأعطاء رتبة لـ أحد الأعضاء  
+*rerole - لآزالة الرتبة من أحد الاعضاء 
+*setvoice -   لعمل روم الفويس أونلاين  
+*giveaway - قيف اواي :tada:
+*setvoice - لعمل روم بآالمتصلين بالصوت في السيرفر :telephone_receiver: 
+*setwelcomer - لوضع شات لترحيب
 
             bot info       
-$inv - لدعوة البوت :pen_fountain: 
-$sup - الدعم الفني :nut_and_bolt:**`)
+*inv - لدعوة البوت :pen_fountain: 
+*sup - الدعم الفني :nut_and_bolt:**`)
     message.author.send(embed)
 }
 });
