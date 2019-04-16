@@ -1509,7 +1509,24 @@ client.on('message',message =>{
   .setDescription(`${invites.join(`\n`)+'\n\n**By:** '+message.author}`)
   .setThumbnail("https://media.discordapp.net/attachments/477570106755383307/479229377037598720/22713057_151850495552450_709700562_o.jpg?width=201&height=201")
            message.channel.send({ embed: embed });
-   
+   var AsciiTable = require('ascii-data-table').default
+client.on('message', message =>{
+
+    if(message.content == prefix +"roles"){
+        if(message.guild.member(message.author).hasPermission("ADMINISTRATOR"))
+        var 
+        ros=message.guild.roles.size,
+        data = [['Rank', 'RoleName']]
+        for(let i =0;i<ros;i++){
+            if(message.guild.roles.array()[i].id !== message.guild.id){
+         data.push([i,`${message.guild.roles.filter(r => r.position == ros-i).map(r=>r.name)}`])
+        }}
+        let res = AsciiTable.table(data)
+
+        message.channel.send(`**\`\`\`xl\n${res}\`\`\`**`);
+    }
+});
+
   });
    
     }
