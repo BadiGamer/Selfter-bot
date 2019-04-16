@@ -641,7 +641,8 @@ ${prefix}allbots - رؤية جميع بوتات السيرفر :robot:
 ${prefix}channels - لرؤية رومات السيرفر :urn:
 ${prefix}color - لأختيار لونك في السيرفر :heart:
 ${prefix}invite - معلومات عن الدعوة :soccer:
-
+$new - لفتح تذكرة
+$close - لاقفال التذكرة
          
         Admin's Commands.  
 $ban - أمر الباند :no_entry:
