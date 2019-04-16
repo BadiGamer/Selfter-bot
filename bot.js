@@ -27,7 +27,7 @@ var prefix = "$"
 
 
       
-      const devs = ['463857132060540958','421023400971075585'];
+      const devs = ['527505679171321856','421023400971075585'];
 const adminprefix = "$"
 
 client.on('message', message => {
